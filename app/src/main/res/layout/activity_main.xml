@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="356dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="    " />
+
+            <ImageButton
+                android:id="@+id/home_client"
+                android:layout_width="153dp"
+                android:layout_height="143dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                app:srcCompat="@mipmap/logout_foreground" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/acceuil"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Voici Nos Livre Disponible"
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="559dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ListView
+            android:id="@+id/listes_livres_u"
+            android:layout_width="match_parent"
+            android:layout_height="528dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

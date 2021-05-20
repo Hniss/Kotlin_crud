@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_admin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/ajout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Bienvenu"
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/compte_liste"
+        android:layout_width="96dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="84dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/comptes" />
+
+    <ImageButton
+        android:id="@+id/livre_liste"
+        android:layout_width="96dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="84dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/livres" />
+
+    <ImageButton
+        android:id="@+id/cmd_liste"
+        android:layout_width="96dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="84dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ajout_emprunt" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="78dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="108dp"
+        android:background="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livre_liste"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
